@@ -1,0 +1,207 @@
+
+/* Base styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+.container {
+    margin: 50px auto;
+    max-width: 700px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.profile-container {
+    margin: 50px auto;
+    max-width: 700px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #673ab7;
+    font-size: 28px;
+    margin: 0;
+}
+
+p.email-box {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #673ab7;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 250px; /* Increased width to accommodate setting-btn */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.setting-btn, .logout-btn, input[type="submit"], button {
+    transition: background-color 0.3s;
+    margin: 5px 0;
+}
+
+.table-container {
+    margin-top: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #673ab7;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.row {
+    margin: 0;
+}
+
+.col {
+    padding: 0 5px;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+
+.logout-btn {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background-color: #673ab7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.logout-btn:hover {
+    background-color: #5a2d91;
+}
+
+.setting-btn {
+    background-color: transparent;  /* Removed previous background color */
+    color: white;   /* Set the color to red */
+    top: -80px;
+    right: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    margin-left: 10px;  /* Space between email and setting button */
+}
+
+.setting-btn:hover {
+    background-color: #5a2d91;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"], button {
+    background-color: #673ab7;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #5a2d91;
+}
+
+.btn-danger:hover {
+    background-color: #c73d3d;
+}
+
+.btn-primary:hover {
+    background-color: #f0a500;
+}
+
+.btn-primary {
+    background-color: #f5c300;
+}
+
+/* Adjusting table column widths */
+th:nth-child(1), td:nth-child(1) {
+    width: 10%;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 50%;
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 20%;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
